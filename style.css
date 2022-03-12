@@ -1,0 +1,394 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #555;
+    text-shadow: 0 0 1px rgba(33, 33, 33, 0.2);
+}
+
+a{
+    font-variant: normal;
+    text-decoration: none;
+    color:rgb(0, 118, 228);
+}
+
+.logo{
+    font-size: 2.5rem;
+    text-shadow: 0 0 11px rgba(0, 105, 255, .45);
+}
+
+.logo:hover{
+    transition: text-shadow 0.4s;
+    text-shadow: 0 0 11px rgba(0, 105, 255, 1);
+}
+
+a:hover{
+    color:rgb(0, 77, 150);
+}
+
+h1, h2, h3, h4{
+    font-weight: 900;
+    color:rgb(61, 101, 138);
+}
+.small{
+    font-size: 0.7rem;
+    font-weight: 200;
+}
+h1{
+    font-size: 2.2rem;
+}
+h2{
+    font-size: 1.8rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 10px;
+}
+
+.navbar nav > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+button,
+.navbar nav > ul > li {
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid #888;
+    height: 40px;
+    background-color: rgb(210, 231, 250);
+    margin: 0 5px;
+    padding: 10px 20px;
+    line-height: 40px;
+}
+
+.navbar nav > ul > li > a{
+    color: black;
+}
+
+button.primary, 
+.navbar nav > ul > li:hover > a, 
+.navbar nav > ul > li.active > a{
+    color: white;
+}
+
+button.primary,
+.navbar nav > ul > li:hover, 
+.navbar nav > ul > li.active{
+    background-color: rgb(78, 169, 253);
+}
+
+button{
+    font-size: 0.9rem;
+    cursor: pointer;
+    line-height: normal;
+}
+
+.two{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.two > .right,
+.two > .left {
+    width: 50%;
+    padding: 20px;
+}
+
+.top-bg{
+    background-image: url('img/top-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left {
+    padding-right: 10px;
+}
+
+.right{
+    padding-left: 10px;
+}
+
+.two .right > img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+header{
+    position: relative;
+}
+header > .two{
+    height: 500px;
+}
+
+header > .two > .right{
+    background-image: url('img/vacuna.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .bottom {
+    width: 75%;
+    position: absolute;
+    bottom: -50px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+}
+header, section{
+    margin: 50px 0;
+}
+.container-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.marca{
+    background-color: aliceblue;
+    max-width: 300px;
+    min-width: 200px;
+    height: 150px; 
+    margin: 20px 0;
+    padding: 20px;
+    vertical-align: middle;
+    position: relative;    
+}
+
+.marca, 
+.cuadro, 
+.panel, 
+.navbar nav > ul > li, 
+button{
+    transition: box-shadow .3s;
+}
+.marca:hover, 
+.panel:hover, 
+.cuadro:hover, 
+.navbar nav > ul > li:hover, 
+button:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.8);
+}
+
+.marca > img{
+    max-height: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-out;
+
+}
+
+.marca > img:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.figura{
+    position: relative;
+}
+
+.figura > .linea{
+    height: 2px;
+    position: absolute;
+    top: 49px;
+    background-color: #eee;
+    width: calc(100% - 98px);
+    min-width: 150px;
+}
+
+.right > .figura > .linea{
+    right: 98px;
+}
+
+.left > .figura > .linea{
+    left: 98px;
+}
+
+.figura > .triangulo{
+    width: 0; 
+    height: 0; 
+    position: absolute;
+}
+
+.right > .figura > .triangulo{
+    border-right: 100px solid #eee;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent; 
+    right: 0px;
+}
+
+.left > .figura > .triangulo {
+    border-left: 100px solid #eee;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent; 
+    left: 0px;
+}
+
+.rounded{
+    border-radius: 10px;
+}
+.cuadro{
+    background-color: aliceblue;
+    border: 1px solid #aaa;
+    padding: 10px;
+    margin: 10px;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.contacto,
+.immunity{
+    background-image: url('img/immunity.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right ;
+}
+
+
+input[type='checkbox'] { 
+    display: none; 
+} 
+
+.wrap-collapsible { 
+    margin: 10px; 
+} 
+
+.lbl-toggle { 
+    display: block; 
+    font-weight: bold; 
+    padding: 1rem; 
+    font-size: 1.2rem;
+    color: white; 
+    background: rgb(78, 169, 253);
+    cursor: pointer; 
+    border-radius: 7px; 
+    transition: all 0.25s ease-out; 
+} 
+
+.lbl-toggle:hover { 
+    color: #FFF; 
+} 
+
+.lbl-toggle::before { 
+    content: ' '; 
+    display: inline-block; 
+    border-top: 5px solid transparent; 
+    border-bottom: 5px solid transparent; 
+    border-left: 5px solid currentColor; 
+    vertical-align: middle; 
+    margin-right: .7rem; 
+    transform: translateY(-2px); 
+    transition: transform .2s ease-out; 
+} 
+
+.toggle:checked+.lbl-toggle::before { 
+    transform: rotate(90deg) translateX(-3px); 
+} 
+
+.collapsible-content { 
+    max-height: 0px; 
+    overflow: hidden; 
+    transition: max-height .25s ease-in-out; 
+} 
+
+.toggle:checked + .lbl-toggle + .collapsible-content { 
+    max-height: 350px; 
+} 
+
+.toggle:checked+.lbl-toggle { 
+    border-bottom-right-radius: 0; 
+    border-bottom-left-radius: 0; 
+} 
+
+.collapsible-content .content-inner { 
+    background: rgb(210, 231, 250);
+    border-bottom: 1px solid rgba(0, 105, 255, .45); 
+    border-bottom-left-radius: 7px; 
+    border-bottom-right-radius: 7px; 
+    padding: .5rem 1rem; 
+} 
+
+.collapsible-content p { 
+    margin-bottom: 0; 
+    font-size: 0.8rem;
+}
+
+.cuadro > div > button{
+    display: block;
+    margin: 20px auto;
+    
+}
+
+.gde > .cuadro{
+    min-width: 200px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contacto{
+    background-image: url('img/contacto.jpg');
+    background-position: 50% 0;
+}
+
+footer{
+    font-weight: 100;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: aliceblue;
+    font-size: 0.8rem;
+}
+footer>*{
+    flex: 1 1 50%;
+}
+
+footer nav > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav > ul > li {
+    font-size: 0.9rem;
+    border: none;
+    height: auto;
+    background: none;
+    line-height: 25px;
+}
+
+footer > div:last-of-type{
+    align-self: baseline;
+
+    margin-top: 20px;
+}
